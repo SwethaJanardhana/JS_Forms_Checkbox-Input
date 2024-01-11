@@ -33,6 +33,7 @@
             id="first-name"
             placeholder="Your first name"
             value="Alex"
+            required
           />
 
           <label for="last-name">Last Name</label>
@@ -42,13 +43,21 @@
             id="last-name"
             placeholder="Your last name"
             value="Smith"
+            required
           />
 
           <label for="age">Age</label>
-          <input type="number" name="age" id="age" min="16" max="200" />
+          <input
+            type="number"
+            name="age"
+            id="age"
+            min="16"
+            max="200"
+            required
+          />
 
           <label for="email">Email</label>
-          <input type="email" name="email" id="email" />
+          <input type="email" name="email" id="email" required />
         </fieldset>
 
         <fieldset>
@@ -87,7 +96,7 @@
           />
 
           <label for="order-date">Order Date</label>
-          <input type="date" name="orderDate" id="order-date" />
+          <input type="date" name="orderDate" id="order-date" required />
 
           <label for="tos">
             <input type="checkbox" name="tos" id="tos" data-js="tos" />
@@ -107,6 +116,9 @@
 
         <button type="submit">Complain now!</button>
       </form>
+      <div data-js="success" class="success">
+        Complaint successfully submitted!
+      </div>
     </main>
   </body>
 </html>
