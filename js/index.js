@@ -9,7 +9,7 @@ hideTosError();
 hideSuccessmessage();
 
 function hideTosError() {
-  tosError.setAttribute("hidden", "Please agree to the Terms and Conditions!");
+  tosError.setAttribute("hidden", "");
 }
 function showTosError() {
   tosError.removeAttribute("hidden");
@@ -20,7 +20,7 @@ function displaySuccessmessage() {
 }
 
 function hideSuccessmessage() {
-  successMessage.setAttribute("hidden", "Complaint successfully submitted!");
+  successMessage.setAttribute("hidden", "");
 }
 
 form.addEventListener("submit", (event) => {
